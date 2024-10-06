@@ -8,7 +8,7 @@ export const Projects = () => {
       <br />
       <div className="projects__info grid">
         <Link className="project__box" >
-            <h4 className="project__title">Portfolio-ThanhHang</h4>
+            <h4 className="project__title">Portfolio-HangNguyen</h4>
             <span className="project__subtitle">React</span>
         </Link>
         <Link className="project__box" to='https://github.com/ZizieNguyen/ClockYou'>
