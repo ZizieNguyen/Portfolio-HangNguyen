@@ -24,6 +24,8 @@ export const Projects = () => {
             <span className="project__subtitle">HTML, CSS y JavaScript</span>
         </Link>
       </div>
+      <Link  to='/projects' className='button'> Más detalle ... 
+      </Link>
     </div>
   )
 }

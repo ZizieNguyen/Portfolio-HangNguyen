@@ -5,6 +5,8 @@ import { Home } from './components/home/Home';
 import { About } from './components/about/About';
 import { Skill } from './components/skills/Skill';
 import { Education } from './components/education/Education';
+import { Contact } from './components/contact/Contact';
+import { Projects } from './components/projects/Projects';
 
 function App() {
   return (
@@ -16,8 +18,12 @@ function App() {
           </Routes> */}
           <Home/>
           <About/>
+          <Routes>
+            <Route path='/proyectos' element={<Projects/>}/>
+          </Routes>
           <Skill/>
           <Education/>
+          <Contact/>
 
         </Layout>
       </BrowserRouter>        

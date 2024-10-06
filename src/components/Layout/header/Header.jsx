@@ -23,16 +23,16 @@ export const Header = () => {
                             </HashLink>
                         </li>
                         <li>
-                            <NavLink className='nav__link active-link'>
+                            <NavLink  to='/projects' className='nav__link active-link'>
                                 
                                 <span className="material-symbols-outlined nav__icon">terminal</span>Proyectos
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className='nav__link active-link'>
+                            <HashLink className='nav__link active-link' to={'#contact'}>
                                 
                                 <span className="material-symbols-outlined nav__icon">send</span>Contacto
-                            </NavLink>
+                            </HashLink>
                         </li>
                     </ul>
 
