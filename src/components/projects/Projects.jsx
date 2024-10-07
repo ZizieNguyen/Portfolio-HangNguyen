@@ -1,6 +1,7 @@
 import './project.css'
 import { projects } from "../../data/projects.js"
 import { Link } from 'react-router-dom'
+import { ScrollUp } from '../scrollUp/ScrollUp.jsx'
 
 export const Projects = () => {
   return (
@@ -36,6 +37,7 @@ export const Projects = () => {
 
             }
         </div>
+        <ScrollUp/>
     </section>
   )
 }

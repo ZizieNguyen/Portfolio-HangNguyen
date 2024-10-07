@@ -5,13 +5,13 @@ import { Contact } from './components/contact/Contact';
 import { Projects } from './components/projects/Projects';
 import { AllAbout } from './components/allAbout';
 import { PageNotFound } from './components/pageNotFound/PageNotFound';
+import { ScrollUp } from './components/scrollUp/ScrollUp';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Layout>       
-          
+        <Layout>                 
           <main className="main">
             <Routes>
               <Route path='/' element={<AllAbout />} />
@@ -20,8 +20,8 @@ function App() {
               <Route path='/contact' element={<Contact />} />
               <Route path='*' element={<PageNotFound />} />
             </Routes>
+            <ScrollUp/>
           </main>
-
         </Layout>
       </BrowserRouter>        
     </>
