@@ -1,36 +1,26 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from './components/Layout/Layout';
-//import { Home } from './components/home/Home';
-// import { About } from './components/about/About';
-// import { Skill } from './components/skills/Skill';
-// import { Education } from './components/education/Education';
 import { Contact } from './components/contact/Contact';
-// import { Projects } from './components/projects/Projects';
+import { Projects } from './components/projects/Projects';
 import { AllAbout } from './components/allAbout';
+import { PageNotFound } from './components/pageNotFound/PageNotFound';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Layout>       
-          {/* <Routes>
-            <Route path='/' element={<Home />}/>
-          </Routes> 
-          <Home/>
-          <About/> 
-          <Routes>
-            <Route path='/proyectos' element={<Projects/>}/>
-          </Routes> 
-          <Skill/>
-          <Education/>
-          <Contact/> */}
-          <Routes>
-            <Route path='/' element={<AllAbout />} />
-            <Route path='/allAbout' element={<AllAbout />} />
-            <Route path='/contact' element={<Contact />} />
-
-          </Routes>
+          
+          <main className="main">
+            <Routes>
+              <Route path='/' element={<AllAbout />} />
+              <Route path='/allAbout' element={<AllAbout />} />
+              <Route path='/projects' element={<Projects />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='*' element={<PageNotFound />} />
+            </Routes>
+          </main>
 
         </Layout>
       </BrowserRouter>        
