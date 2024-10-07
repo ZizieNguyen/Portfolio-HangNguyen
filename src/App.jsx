@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from './components/Layout/Layout';
 import { Contact } from './components/contact/Contact';
 import { Projects } from './components/projects/Projects';
-import { AllAbout } from './components/allAbout';
 import { PageNotFound } from './components/pageNotFound/PageNotFound';
 import { ScrollUp } from './components/scrollUp/ScrollUp';
+import { AllAbout } from './components/allAbout';
 
 function App() {
   return (
