@@ -5,7 +5,7 @@ import { Contact } from './components/contact/Contact';
 import { Projects } from './components/projects/Projects';
 import { PageNotFound } from './components/pageNotFound/PageNotFound';
 import { ScrollUp } from './components/scrollUp/ScrollUp';
-import { AllAbout } from './components/allAbout';
+import { AllAbout } from './components/AllAbout';
 
 function App() {
   return (
