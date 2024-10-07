@@ -1,12 +1,13 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from './components/Layout/Layout';
-import { Home } from './components/home/Home';
-import { About } from './components/about/About';
-import { Skill } from './components/skills/Skill';
-import { Education } from './components/education/Education';
+//import { Home } from './components/home/Home';
+// import { About } from './components/about/About';
+// import { Skill } from './components/skills/Skill';
+// import { Education } from './components/education/Education';
 import { Contact } from './components/contact/Contact';
-import { Projects } from './components/projects/Projects';
+// import { Projects } from './components/projects/Projects';
+import { AllAbout } from './components/allAbout';
 
 function App() {
   return (
@@ -15,15 +16,21 @@ function App() {
         <Layout>       
           {/* <Routes>
             <Route path='/' element={<Home />}/>
-          </Routes> */}
+          </Routes> 
           <Home/>
-          <About/>
+          <About/> 
           <Routes>
             <Route path='/proyectos' element={<Projects/>}/>
-          </Routes>
+          </Routes> 
           <Skill/>
           <Education/>
-          <Contact/>
+          <Contact/> */}
+          <Routes>
+            <Route path='/' element={<AllAbout />} />
+            <Route path='/allAbout' element={<AllAbout />} />
+            <Route path='/contact' element={<Contact />} />
+
+          </Routes>
 
         </Layout>
       </BrowserRouter>        

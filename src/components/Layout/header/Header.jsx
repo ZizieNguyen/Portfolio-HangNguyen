@@ -1,23 +1,35 @@
 import { NavLink } from "react-router-dom";
 import './Header.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 export const Header = () => {
-    const [toggle, showMenu] = useState(false)
+    const [toggle, showMenu] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.querySelector(".header");
+            if (window.scrollY >= 80) {
+                header.classList.add('scroll-header');
+            } else {
+                header.classList.remove('scroll-header');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
   return (
     <div>
         <header className="header">
             <nav className="nav container">
-                <HashLink to={'#home'} className='nav__logo'>Hang Nguyen</HashLink>
+                <NavLink to={'/'} className='nav__logo'>Hang Nguyen</NavLink>
                 <div className={toggle ? 'nav__menu show-menu' : 'nav__menu'}>
                     <ul className="nav__list grid">
-                        <li className="nav__item">                           
-                            <HashLink className='nav__link active-link' to={'#home'}>
-                                <span className="material-symbols-outlined  nav__icon">Home </span>Inicio
-                            </HashLink>
-                        </li>
                         <li>
-                            <HashLink className='nav__link active-link' to={'#about'}>                               
+                            <HashLink className='nav__link active-link' to={'/allAbout'}>                               
                                     <span className="material-symbols-outlined nav__icon">person</span>
                                 Sobre Mí
                             </HashLink>
@@ -29,10 +41,10 @@ export const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <HashLink className='nav__link active-link' to={'#contact'}>
+                            <NavLink className='nav__link active-link' to={'/contact'}>
                                 
                                 <span className="material-symbols-outlined nav__icon">send</span>Contacto
-                            </HashLink>
+                            </NavLink>
                         </li>
                     </ul>
 
