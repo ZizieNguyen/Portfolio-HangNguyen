@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import './Header.css'
 import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import Logotipo from '../../../assets/Logotipo.png'
 export const Header = () => {
     const [toggle, showMenu] = useState(false);
 
@@ -31,7 +32,10 @@ export const Header = () => {
     <div>
         <header className="header">
             <nav className="nav container">
-                <NavLink to={'/'} className='nav__logo' onClick={closeMenu}>Hang Nguyen</NavLink>
+                <NavLink to={'/'} className='nav__logo' onClick={closeMenu}>
+                <img 
+               className="logo__img" src={Logotipo} alt="logotipo" />
+                </NavLink>
                 <div className={toggle ? 'nav__menu show-menu' : 'nav__menu'}>
                     <ul className="nav__list grid">
                         <li>
