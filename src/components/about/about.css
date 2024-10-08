@@ -12,6 +12,7 @@
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     column-gap: 4rem;
+    background-color: hsl(0, 0%, 98%)
 }
 
 .about__img {

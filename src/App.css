@@ -67,6 +67,7 @@ img {
 
 .section {
   padding: 6rem 0 2rem;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .section__title {
@@ -89,6 +90,7 @@ img {
   max-width: 968px ;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .grid {

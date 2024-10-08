@@ -1,5 +1,6 @@
 .home__container {
     row-gap: 3rem;
+    background-color: hsl(0, 0%, 98%);
 }
 
 .home__content {

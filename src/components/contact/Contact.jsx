@@ -45,7 +45,9 @@ export const Contact = () => {
                         <h3 className="contact__card-title">Linkedin</h3>
                         <span className="contact__card-data">Mensaje Por Linkedin</span>
 
-                        <Link className="contact__button" to={'https://www.linkedin.com/in/thanh-hang-nguyen93/?locale=es_ES'}> 
+                        <Link className="contact__button" to={'https://www.linkedin.com/in/thanh-hang-nguyen93/?locale=es_ES'} >
+                            Escríbeme{' '}
+                            <i className="bx bx-right-arrow-alt contact__button-icon"></i> 
                         </Link>
                     </div>
                 </div>

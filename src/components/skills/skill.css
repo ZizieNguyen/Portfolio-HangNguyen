@@ -6,6 +6,7 @@
     grid-template-columns: repeat(3, 250px);
     column-gap: 3rem;
     justify-content: center;
+    background-color: hsl(0, 0%, 98%)
 }
 
 .skills__content {
