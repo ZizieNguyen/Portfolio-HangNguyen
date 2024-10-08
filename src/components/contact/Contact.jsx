@@ -7,11 +7,16 @@ import toast from 'react-hot-toast';
 export const Contact = () => {
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const sendEmail = async(e) => {
       e.preventDefault();
 
-        toast.success('El mensaje se ha enviado correctamente'); 
-        e.target.reset();      
+      const response = await fetch(e.target.action, {
+        method: e.target.method,
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form.current),
+    });
+        response.ok ? toast.success('Mensaje se ha enviado correctamente') : toast.error('Error al enviar');
+        form.current.reset();     
     }    
   return (
     <section className="contact section" id="contact">
