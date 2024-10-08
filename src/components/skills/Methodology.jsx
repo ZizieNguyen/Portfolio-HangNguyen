@@ -1,7 +1,7 @@
 export const Methodology = () => {
   return (
     <div className="skills__content">
-        <h3 className="skills__title">Metodología</h3>
+        <h3 className="skills__title">Otros</h3>
 
         <div className="skills__box">
             <div className="skills__group">
@@ -9,7 +9,7 @@ export const Methodology = () => {
                     <i className="uil uil-angle-double-right"></i>
                     <div>
                         <h3 className="skills__name">Git</h3>
-                        <span className="skills__level">Básico</span>
+                        <span className="skills__level">Intermedio</span>
                     </div>
                 </div>
 

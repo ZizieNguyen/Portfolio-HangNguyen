@@ -59,7 +59,7 @@ export const Data = () => {
         
 
         <p className="home__description">¡Hola! Soy Thanh Hang, graduada en Administración y Dirección de Empresas. Sin embargo, descubrí mi verdadera pasión en la programación y he decidido enfocar mi carrera en el desarrollo web, un área que me inspira y motiva a seguir aprendiendo y contribuyendo.</p>
-        <Link to="#contacto" className="button button--flex">
+        <Link to={'/contact'} className="button button--flex">
             Contáctame
             <svg
                   className="button__icon"

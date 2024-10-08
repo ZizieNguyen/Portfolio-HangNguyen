@@ -19,7 +19,7 @@ body, button, input, textarea {
 
 body {
   background-color: hsl(0, 0%, 98%);
-  color: #cdab81;
+  color: #d1b280;
   min-height: 100vh;
   
 }
@@ -42,7 +42,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: #4f4a45;
+  color: #080706;
   font-weight: 600;
 }
 
@@ -99,8 +99,8 @@ img {
 /* BUTTON */
 .button {
   display: inline-block;
-  background-color: #6c5f5b;
-  color: #fff;
+  background-color:  #594d46  ;
+  color: #efefef;
   padding: 1.25rem 2rem;
   border: 1rem;
   border-radius: 25px;
@@ -108,7 +108,7 @@ img {
 }
 
 .button:hover {
-  background-color: #4f4a45;
+  background-color: #d1b280 ;
 }
 
 .button__icon {

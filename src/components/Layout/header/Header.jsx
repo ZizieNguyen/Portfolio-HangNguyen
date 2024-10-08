@@ -21,27 +21,33 @@ export const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const closeMenu = () => {
+        showMenu(false);
+        window.scrollTo(0, 0);
+    }
+
   return (
     <div>
         <header className="header">
             <nav className="nav container">
-                <NavLink to={'/'} className='nav__logo'>Hang Nguyen</NavLink>
+                <NavLink to={'/'} className='nav__logo' onClick={closeMenu}>Hang Nguyen</NavLink>
                 <div className={toggle ? 'nav__menu show-menu' : 'nav__menu'}>
                     <ul className="nav__list grid">
                         <li>
-                            <HashLink className='nav__link active-link' to={'/allAbout'}>                               
+                            <HashLink className='nav__link active-link' to={'/allAbout'} onClick={closeMenu}>                               
                                     <span className="material-symbols-outlined nav__icon">person</span>
                                 Sobre Mí
                             </HashLink>
                         </li>
                         <li>
-                            <NavLink  to='/projects' className='nav__link active-link'>
+                            <NavLink  to='/projects' className='nav__link active-link' onClick={closeMenu}>
                                 
                                 <span className="material-symbols-outlined nav__icon">terminal</span>Proyectos
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className='nav__link active-link' to={'/contact'}>
+                            <NavLink className='nav__link active-link' to={'/contact'} onClick={closeMenu}>
                                 
                                 <span className="material-symbols-outlined nav__icon">send</span>Contacto
                             </NavLink>

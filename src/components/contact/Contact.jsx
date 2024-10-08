@@ -1,21 +1,18 @@
 import  { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 import { Link } from "react-router-dom"
 import './contact.css'
+import toast from 'react-hot-toast';
 
 export const Contact = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
       e.preventDefault();
-  
-      emailjs
-        .sendForm('service_yb2wwl7', 'template_3o5nqgj', form.current, {
-          publicKey: '5OkUeIIydwp8wYz1k',
-        })
-        e.target.reset()
-    };
+
+        toast.success('El mensaje se ha enviado correctamente'); 
+        e.target.reset();      
+    }    
   return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Contacto</h2>
@@ -43,8 +40,7 @@ export const Contact = () => {
                         <h3 className="contact__card-title">Linkedin</h3>
                         <span className="contact__card-data">Mensaje Por Linkedin</span>
 
-                        <Link className="contact__button" to={'mailto:zizie.nguyen@gmail.com'}> Escríbeme{' '}
-                            <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                        <Link className="contact__button" to={'https://www.linkedin.com/in/thanh-hang-nguyen93/?locale=es_ES'}> 
                         </Link>
                     </div>
                 </div>
@@ -53,26 +49,27 @@ export const Contact = () => {
             <div className="contact__content">
                 <h3 className="contact__title"></h3>
 
-                <form ref={form} onSubmit={sendEmail} className="contact__form">
+                <form action="https://formspree.io/f/mzzbpkln"
+                    method="POST" ref={form} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
                         <label htmlFor="name" className="contact__form-tag">Nombre</label>
                         <input type="text" name="name" id="name" className="contact__form-input"
-                        placeholder="Tu nombre y apellidos"/>
+                        placeholder="Tu nombre y apellidos" required/>
                     </div>
 
                     <div className="contact__form-div">
                         <label htmlFor="email" className="contact__form-tag">Email</label>
                         <input type="text" name="email" id="email" className="contact__form-input"
-                        placeholder="Tu email"/>
+                        placeholder="Tu email" required/>
                     </div>
 
                     <div className="contact__form-div contact__form-area">
                         <label htmlFor="message" className="contact__form-tag">Mensaje</label>
-                        <textarea className="contact__form-area contact__form-input" name="message" id="message" cols={30} rows={10} placeholder="Tu mensaje">
+                        <textarea className="contact__form-area contact__form-input" name="message" id="message" cols={30} rows={10} placeholder="Tu mensaje" required>
                         </textarea>
                     </div>
 
-                    <button className="button button--flex">
+                    <button className="button button--flex" >
                     Enviar mensaje
                     <svg
                     className="button__icon"

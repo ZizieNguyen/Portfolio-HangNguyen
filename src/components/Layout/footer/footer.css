@@ -10,7 +10,7 @@
 
 .footer__title,
 .footer__link {
-    color: #6c5f5b;
+    color: #080706;
 }
 
 .footer__title {
@@ -36,7 +36,7 @@
 }
 
 .footer__social-link {
-    background-color: #4f4a45;
+    background-color: #080706;
     color: #fff;
     font-size: 1.125rem;
     padding: 0.4rem;
@@ -45,7 +45,7 @@
 }
 
 .footer__social-link:hover {
-    background-color: black;
+    background-color: #4f4a45;
 }
 
 .footer__copy {

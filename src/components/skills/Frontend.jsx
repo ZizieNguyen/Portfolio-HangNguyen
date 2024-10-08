@@ -25,7 +25,7 @@ export const Frontend = () => {
                     <i className="uil uil-angle-double-right"></i>
                     <div>
                         <h3 className="skills__name">JavaScript</h3>
-                        <span className="skills__level">Básico</span>
+                        <span className="skills__level">Intermedio</span>
                     </div>
                 </div>
 
@@ -33,7 +33,7 @@ export const Frontend = () => {
                     <i className="uil uil-angle-double-right"></i>
                     <div>
                         <h3 className="skills__name">React</h3>
-                        <span className="skills__level">Básico</span>
+                        <span className="skills__level">Intermedio</span>
                     </div>
                 </div>
 

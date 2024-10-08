@@ -17,7 +17,7 @@
 
 .nav__logo,
 .nav__toggle {
-    color: #cdab81;
+    color: #d1b280;
     font-weight: 500;
 }
 
@@ -45,8 +45,8 @@
 /* ACTIVE LINK */
 /* .active-link, */
 .nav__link:hover {
-    color: #4f4a45;
-    background-color: #cdab81 ;
+    color: #080706;
+    
 }
 
 
@@ -60,7 +60,7 @@
     }
 
     .container {
-        background-color: hsl(0, 0%, 98%);
+        background-color: #fff;
     }
 
     .nav {

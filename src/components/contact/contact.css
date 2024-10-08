@@ -95,7 +95,7 @@
     left: 0.25rem;
     font-size: 0.875rem;
     padding: 0.25rem;
-    background-color: #fff;
+    background-color: hsl(0, 0%, 98%);
     z-index: 10;
 }
 
