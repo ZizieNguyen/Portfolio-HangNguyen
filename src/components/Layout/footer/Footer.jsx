@@ -4,11 +4,12 @@ import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
 
+
 export const Footer = () => {
   return (
     <footer className="footer">
         <div className='footer__container'>
-          <h1 className='footer__title'>Hang Nguyen</h1> 
+          <h1 className='footer__title'>Hang Nguyen</h1>
 
           <ul className='footer__list'>
             <li>

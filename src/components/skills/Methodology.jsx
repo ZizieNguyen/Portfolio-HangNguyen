@@ -16,10 +16,20 @@ export const Methodology = () => {
                 <div className="skills__data">
                     <i className="uil uil-angle-double-right"></i>
                     <div>
+                        <h3 className="skills__name">Jira - Confluence</h3>
+                        <span className="skills__level">Avanzado</span>
+                    </div>
+                </div>
+
+                <div className="skills__data">
+                    <i className="uil uil-angle-double-right"></i>
+                    <div>
                         <h3 className="skills__name">Metodología Scrum</h3>
                         <span className="skills__level">Trabajo en equipo</span>
                     </div>
                 </div>
+
+                
 
                 
             </div>
