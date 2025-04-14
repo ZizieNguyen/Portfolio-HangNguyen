@@ -24,6 +24,11 @@ export const Footer = () => {
                 </NavLink>
             </li>
             <li>
+                <HashLink to={'/allAbout#work'} className='footer__link'>
+                    <span className="material-symbols-outlined nav__icon">work</span>Experiencias
+                </HashLink>
+            </li>
+            <li>
                 <NavLink className='footer__link' to={'/contact'}>
                     
                     <span className="material-symbols-outlined nav__icon">send</span>Contacto

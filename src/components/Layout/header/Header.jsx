@@ -23,6 +23,7 @@ export const Header = () => {
         };
     }, []);
 
+
     const closeMenu = () => {
         showMenu(false);
         window.scrollTo(0, 0);
@@ -49,6 +50,13 @@ export const Header = () => {
                                 
                                 <span className="material-symbols-outlined nav__icon">terminal</span>Proyectos
                             </NavLink>
+                        </li>
+                        <li>
+                            <HashLink
+                                to={'/allAbout#work'} className='nav__link active-link' onClick={closeMenu}
+                            >
+                                <span className="material-symbols-outlined nav__icon">work</span>Experiencias
+                            </HashLink>
                         </li>
                         <li>
                             <NavLink className='nav__link active-link' to={'/contact'} onClick={closeMenu}>
