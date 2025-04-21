@@ -12,6 +12,14 @@ export const Methodology = () => {
                         <span className="skills__level">Intermedio</span>
                     </div>
                 </div>
+                
+                <div className="skills__data">
+                    <i className="uil uil-angle-double-right"></i>
+                    <div>
+                        <h3 className="skills__name">Cypress</h3>
+                        <span className="skills__level">Intermedio</span>
+                    </div>
+                </div>
 
                 <div className="skills__data">
                     <i className="uil uil-angle-double-right"></i>
